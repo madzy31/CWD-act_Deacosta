@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1e3f1ff320.js" crossorigin="anonymous"></script>
+    <!-- font awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare. com/ajax/libs/font-awesome/6.4.2/css/all.min.css"integrity="sha512-23gLpd7yknf1YoNbCzqRKc4qyor8gakU1qmn+CShxbuBusANI9QpRohGBreCFKKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Navar & Sidenav</title>
+</head>
+<body>
+  <!-- Navar Fixed -->
+  <div class="navbar-fixed">
+    <nav class="nav-extended brown darken-2">
+
+      <div class="container">
+          <div class="nav-wrapper">
+              <a href="" class="center white-text"><i> NAVBAR</i></a>
+            </div>
+      </div>
+    </nav>
+  </div>
+
+
+    <br>
+    <div class="container">
+        <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+        <h2 class="brown-text text-darkenk-4">Right Aligned Links</h2>
+      <p>To right align your navbar links, just add a right class to your <'ul'> that contains them.</p>
+
+      <nav class="brown darken-2">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="https://shopee.ph/" class="brand-logo" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="https://shopee.ph/buyer/login?next=https%3A%2F%2Fshopee.ph%2F" target="_blank">Login</a></li>
+                  <li><a href="https://shopee.ph/buyer/signup?next=https%3A%2F%2Fshopee.ph%2F" target="_blank">Signup</a></li>
+                  <li><a href="https://shopee.ph/seller/signup" target="_blank">Start Selling</a></li>
+                  
+                </ul>
+              </div>
+        </div>
+      </nav class="brown darken-2">
+      <h2 class="brown-text text-darken-4">Left Aligned Links</h2>
+      <p>To left align your navbar links, just add a left class to your <'ul'> that contains them.</p>
+      <nav class="brown darken-2">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="https://shopee.ph/" class="brand-logo right" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="https://shopee.ph/buyer/login?next=https%3A%2F%2Fshopee.ph%2F" target="_blank">Login</a></li>
+                    <li><a href="https://shopee.ph/buyer/signup?next=https%3A%2F%2Fshopee.ph%2F" target="_blank">Signup</a></li>
+                    <li><a href="https://shopee.ph/seller/signup" target="_blank">Start Selling</a></li>
+                </ul>
+              </div>
+        </div>
+      </nav >
+      <h2 class="brown-text text-darken-4">Centering the logo</h2>
+      <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your <'a class="brand-logo">. You will have to make sure yourself that links do not overlap if you use this.</p>
+      <nav class="brown darken-2">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="https://shopee.ph/" class="brand-logo center" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="https://shopee.ph/buyer/login?next=https%3A%2F%2Fshopee.ph%2F" target="_blank">Login</a></li>
+                    <li><a href="https://shopee.ph/buyer/signup?next=https%3A%2F%2Fshopee.ph%2F" target="_blank">Signup</a></li>
+                    <li><a href="https://shopee.ph/seller/signup" target="_blank">Start Selling</a></li>
+                </ul>
+              </div>
+        </div>
+      </nav>
+      <h2 class="brown-text text-darken-4">Active Items</h2>
+      <p>Add active class to your li tags to denote the current page.</p>
+      <nav class="brown darken-2">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="https://shopee.ph/" class="brand-logo center" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li class="active"><a href="https://shopee.ph/buyer/login?next=https%3A%2F%2Fshopee.ph%2F" target="_blank">Login</a></li>
+                    <li><a href="https://shopee.ph/buyer/signup?next=https%3A%2F%2Fshopee.ph%2F" target="_blank">Signup</a></li>
+                    <li class="active"><a href="https://shopee.ph/seller/signup" target="_blank">Start Selling</a></li>
+                </ul>
+              </div>
+        </div>
+      </nav>
+      <h2 class="brown-text text-darken-4">Extended Navbar with Tabs</h2>
+      <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+      <!-- Navar Extended -->
+      <nav class="nav-extended brown darken-2">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="https://shopee.ph/" class="brand-logo center" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href=" "
+                class="sidenav-trigger" data-target="mobile-demo"><i class="fa-solid fa-bars"></i></a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="https://shopee.ph/buyer/login?next=https%3A%2F%2Fshopee.ph%2F" target="_blank">Login</a></li>
+                    <li><a href="https://shopee.ph/buyer/signup?next=https%3A%2F%2Fshopee.ph%2F" target="_blank">Signup</a></li>
+                    <li><a href="https://shopee.ph/seller/signup" target="_blank">Start Selling</a></li>
+                </ul>
+              </div>
+              <div class="nav-content">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab">
+                        <a href="#test1">Image 1</a>
+                    </li>
+                    <li class="tab">
+                      <a href="#test2">Image 2</a>
+                  </li>
+                  <li class="tab">
+                    <a href="#test3">Image 3</a>
+                </li>
+                </ul>
+              </div>
+        </div>
+      </nav>
+
+      <!-- Sidenav Structure -->
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="https://shopee.ph/buyer/login?next=https%3A%2F%2Fshopee.ph%2F" target="_blank">Login</a></li>
+        <li><a href="https://shopee.ph/buyer/signup?next=https%3A%2F%2Fshopee.ph%2F" target="_blank">Signup</a></li>
+        <li><a href="https://shopee.ph/seller/signup" target="_blank">Start Selling</a></li>
+      </ul>
+
+      <!-- Tab Structure -->
+      <div id="test1" class="col s12">
+        <div class="card">
+          <div class="card-image">
+            <img src="image/GIRL.jpg" alt="" class="responsive-img">
+          </div>
+        </div>
+      </div>
+    
+    <div id="test2" class="col s12">
+      <div class="card">
+        <div class="card-image">
+          <img src="image/pic1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    
+    <div id="test3" class="col s12">
+      <div class="card">
+        <div class="card-image">
+          <img src="image/pic2.jpg" alt="" class="responsive-img">
+        </div>
+      </div>
+    </div>
+    
+    </div>
+
+    <div style="height: 1000px;"></div>
+
+
+
+
+
+
+
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+      <script>
+        $(document).ready(function() {
+          //Tabs Init
+            $('.tabs').tabs();
+            //Sidenav Init
+            $('.sidenav').sidenav();
+        });
+      </script>
+</body>
+
+</html>
